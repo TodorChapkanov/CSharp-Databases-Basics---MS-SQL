@@ -4,7 +4,7 @@ SELECT e.EmployeeID,
 	   e2.FirstName AS ManagerName 
   FROM Employees AS e
   JOIN Employees AS e2
-    ON e2.EmployeeID = E.ManagerID
+    ON e2.EmployeeID = e.ManagerID
  WHERE e2.EmployeeID IN (3, 7)
 ORDER BY e.EmployeeID
  
